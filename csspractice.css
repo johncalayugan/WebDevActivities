@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+p {
+    border-style: dotted;
+    border-color: red;
+}
+.strike-through {
+    text-decoration: line-through;
+}
+.gray-background {
+    background-color: gray;
+}
+
+.bold {
+    font-weight: bold;
+}
