@@ -1,0 +1,32 @@
+.head1 { 
+    font-style: italic;
+    color: blue;
+}
+
+.linegray {
+    color: gray;
+}
+
+.silver {
+    color: silver;
+}
+
+.fuchia {
+    color: fuchsia;
+}
+
+.orange {
+    color: rgb(255, 172, 28);
+}
+
+.underline {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h1,h2 {
+    text-align: center;
+}
+body {
+    background-color: aqua;
+}
