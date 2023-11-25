@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity#2</title>
+</head>
+<body>
+    <h2>
+        These are the steps to push a github repository
+    </h2>
+    <hr>
+    <p>
+        First lets discuss what is git? <br>
+        Git is a <em>free and open source</em> distributed control system designed to handle everything from 
+        small to very large projects with speed and effciency
+    </p>
+    <h3>
+        Here are the steps to push your code to your own repository.
+    </h3>
+    <pre>
+        <code>
+            1. Create a folder specifically for your project
+      # mkdir [yourFolderName]
+
+      Output:
+      
+      $ ls -ld webDev
+      drwxr-xr-x 1 Owner 197121 0 Aug 26 19:57 webDev/
+      
+   2. After creating your folder, change directory using cd command
+      # cd [yourFolderName] 
+
+      Output:
+      $ cd WebDevFiles
+      
+   3. Initialize your github repository using the git init command
+      # git init
+
+      Output:
+      
+      $ git init
+      Initialized empty Git repository in C:/Users/Owner/WebDevFiles/.git/
+      
+
+   4. After initializing you want to make sure that everything is setup properly
+      # ls -lrth
+      # ls -lrtha
+      # pwd    
+
+      Output:
+      
+      $ ls -lrtha
+      total 12K
+      drwxr-xr-x 1 Owner 197121 0 Aug 26 19:57 ../
+      drwxr-xr-x 1 Owner 197121 0 Aug 26 19:58 ./
+      drwxr-xr-x 1 Owner 197121 0 Aug 26 19:58 .git/ <-- This should appear
+
+         $ pwd
+         /c/Users/Owner/WebDevFiles
+      
+   5. Enter your credentials to your computer using the git config
+      # git config --global user.email "myName@example.com"
+
+
+      Output:
+      
+      $ git config --global user.email johncalayugan23@gmail.com
+      
+   6. Add your remote repository in your local machine using the "git remote add" command
+      # git remote add (localComputerName) (urlToYourRepository)
+
+      Output:
+      
+         ~/Projects/webDev (master)
+         $ git remote add origin https://github.com/johncalayugan/WebDevActivities.git
+      
+
+   7. Make sure you're in the correct branch using the git branch command 
+      # git branch -M main
+
+      Output:
+      
+        $ git branch -M main
+
+         ~/Projects/webDev (main)
+      
+   8. Add your code to the staging modified files, be sure to add your 
+      file one step at a time to avoid adding unecessary files and folders
+      adding to your staging phase
+      # git add [fileName]
+
+      Output:
+      
+         ~/Projects/webDev (main)
+         $ git add Activity#2.html
+
+      
+   9. Check if it successfully moves to the staging phase
+      # git status
+
+      Output:
+      
+         $ git status
+         On branch main
+
+         No commits yet
+
+         Changes to be committed:
+         (use "git rm --cached ..." to unstage)
+               new file:   Activity#2.html
+      
+
+   10. Commit your changes to your local repository "git commit"
+      # git commit -m First activity commit
+
+   11. Finally, push your code to the repository using the "git push" command
+      # git push -u (localComputerName) (branchThatYouWantToPush)
+        </code>
+    </pre>
+</body>
+</html>
