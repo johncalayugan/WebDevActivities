@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="John Jomar U. Calayugan">
+    <title>HTML Structure</title>
+   
+</head>
+<body>
+    <h1 style="color: white; background-color: blue; margin-left: 100px; margin-right: 200px;">
+        The Story of LeBron James's 39,000 Points
+    </h1>
+    <hr>
+    <img src="https://www.investopedia.com/thmb/C3wFUQV5c_gbGSqS9KY-VfBBINs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1489016138-b69c82ea8e044ad78514797af9882740.jpg" style="width:250px;height:250px; float: left; margin-right: 10px; margin-bottom: 10px;"
+    alt="Lebron James">
+
+    <p id="date"> </p>
+    <p> 
+        <pre>  
+                By: NBA
+
+                Already the NBA's career scoring leader, LeBron James reached uncharted territory Tuesday night by 
+            becoming the only player in NBA history to score 39,000 career points.James reached the milestone with a 
+            3-pointer in the first quarter of the Los Angeles Lakers' 131-99 victory over the Utah Jazz. He finished with 
+            17 points in 24 minutes as the Lakers completed an unbeaten run through Group Play in the NBA In-Season Tournament.
+            “I got congratulated by my teammates and coaches, (but) I haven't had an opportunity to really wrap my head around what 
+            that means,” James said. “There's been so many great players that came across this league since the beginning of time, 
+            and so many great scorers. To be able to accomplish something that's the first of anything, I think that's always pretty cool. 
+            It's a wild moment, that's for sure.”James continues to play at an elite level in his 21st season, averaging 26.4 points, 8.2 
+            rebounds and 6.5 assists. At his current pace — and assuming good health — James should reach 40,000 points later this season.
+        </pre> 
+    </p>
+
+    <script>
+        var date = new Date();
+        var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+        document.getElementById("date").innerHTML = current_date;
+    </script>
+</body>
+</html>
