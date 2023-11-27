@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="John Jomar U. Calayugan">
+    <title>Mini Form</title>
+    <link rel="stylesheet" href="miniform.css">
+</head>
+<body class="box">
+    <div class="title">
+        Personal Information
+    </div><br>
+
+    <form id="info">
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fname" name="Fname" required>
+
+        <label for="sex">Sex:</label>
+            <select name="Sex" id="sex">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="bdate" required>
+
+        <label for="age">Age:</label>
+        <input type="Age" id="age" required><br><br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="pnumber" name="PhoneNumber" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="Email" required><br><br>
+
+        <label for="address">Permanent Address:</label>
+        <input type="text" id="address" name="Address" required><br><br>
+
+        <button type="button" onclick="displayUserInfo()">Submit</button>
+    
+    </form>
+
+    <script src="miniform.js"></script>
+
+</body>
+</html>
